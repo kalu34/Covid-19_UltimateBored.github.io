@@ -1,0 +1,115 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #16113a;
+    font-family: poppins;
+    overflow: hidden;
+}
+.bg-light-custom{
+    background-color: #272953;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    color: rgb(233, 154, 7)
+}
+.container_wrapper{
+    display: flex;
+    margin: 1rem 2rem;
+}
+.left_box{
+    flex: 0 0 70%;
+}
+.title_Input{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.input_date{
+    width: 10rem;
+    height: 85%;
+    border-radius: .3rem;
+    padding: 0 .4rem;
+    transition: all .2s ease;
+}
+.input_date:focus{
+    outline: none;
+    transform: scale(1.02);
+}
+.left_top{
+    width: 98%;
+    height: 17rem;
+    margin-bottom: .7rem;
+}
+.left_bottom{
+    display: flex;
+}
+.left_bottom_left{
+    flex: 0 0 50%;
+    height: 16rem;
+}
+.left_bottom_right{
+    flex: 0 0 46%;
+    height: 16rem;
+    margin-left: 1rem;
+}
+.right_box{
+flex-grow: 1;
+}
+.search_content{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.search_content-box{
+    display: flex;
+    align-items: center;
+}
+.search_content-search{
+    padding: .7rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    transition: all .2s ease;
+}
+.search_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+}
+.search_input{
+    border: none;
+    margin-right: 1rem;
+    padding: .3rem 1rem;
+    border-radius: .3rem;
+    transition: all .2s ease;
+    font-family: poppins;
+}
+.search_input:focus{
+    outline: none;
+    transform: scale(1.02);
+}
+.search_content:hover{
+    transform: scale(1.03);
+}
+.search_content:active{
+    transform: scale(1);
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+.search_text{
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+/* Tracker background  */
+.active {
+    background-color: #16113a;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}

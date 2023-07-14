@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!-- Google Font -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap 5 framework -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!-- font Awesome  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom css -->
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Document</title>
+    </head>
+    <body onload="onload()">
+        <div class="container_wrapper">
+            <div class="left_box">
+                <div class="title_Input">
+                    <h2 class=" text-white">The Ultimate Covid -19 DashBoard</h2>
+                    <div>
+                        <input type="date" class="input_date" max="2021-03-07" placeholder="2021-03-07" id="search_date">
+                        <button class="btn btn-warning text-white" id="submit_input">Show</button>
+                    </div>
+                </div>
+                <div class="left_top bg-light-custom " id="top_left">
+
+                </div>
+                <div class="left_bottom">
+                    <div
+                        class="left_bottom_left bg-light-custom" id="left_bottom_left"></div>
+                    <div
+                        class="left_bottom_right bg-light-custom" id="left_bottom_right"></div>
+                </div>
+            </div>
+            <div class="right_box bg-light-custom">
+                <div class="search_content   active " id="HistoricUSvalues">
+                    <img src="asset/layers.png" alt="" class="icon">
+                    <div class = "search_text" >Historic US values</div>
+                    
+                </div>
+                <div class="search_content " id="CurrentUSvalues">
+                    <img src="asset/install.png" alt="" class="icon">
+                    <div class = "search_text" >Current US values</div>
+                </div>
+                <div class="search_content " id="UShistoricvaluesforadate">
+                    <img src="asset/history.png" alt="" class="icon">
+                    <div class = "search_text" >US historic values for a date</div>
+                </div>
+                <div class="search_content specialClass" id="Currentvaluesforallstates">
+                    <img src="asset/layers.png" alt="" class="icon">
+                    <div class = "search_text" >Current values for all states</div>
+                </div>
+                <div class="search_content-search">
+                    <div class="search_content-box">
+                        <img src="asset/suitcase.png" alt="" class="icon">
+                        <div class = "search_text" >Current values for a single state</div>
+                    </div>
+                    <div class="search_box">
+                        <input type="text" class="search_input" id="searchedValue"  placeholder="like NY ; NewYork">
+                        <button class="btn btn-warning find" id="Currentvaluesforasinglestate">Show</button>
+                    </div>
+                </div>
+                <div class="search_content-search">
+                    <div class="search_content-box">
+                        <img src="asset/install.png" alt="" class="icon">
+                        <div class = "search_text" >Historic values for a single state</div>
+                    </div>
+                    <div class="search_box">
+                        <input type="text" class="search_input" id="searchedValue_1" placeholder="like NY ; NewYork">
+                        <a class="btn btn-warning find" id="Historicvaluesforasinglestate">Show</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- High Char  -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <!-- Script for Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- font Awesome  -->
+        <script
+            src="https://kit.fontawesome.com/ea03f014d5.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Echart -->
+        <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
